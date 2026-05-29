@@ -29,22 +29,27 @@
 ```bash
 git clone [https://github.com/your_username/voice_agent.git](https://github.com/your_username/voice_agent.git)
 cd voice_agent
+```
 
 2. Создайте и активируйте виртуальное окружение:
 ```bash
 python -m venv venv
 source venv/Scripts/activate  # Для Windows
+```
 
 3. Установите зависимости:
 ```bash
 pip install -r requirements.txt
+```
 
 4. Создайте файл .env в корневой директории и добавьте ваш ключ:
 ```bash
 GROQ_API_KEY=your_groq_api_key_here
+```
 
 5. Запустите сервер:
 ```bash
 uvicorn main:app --reload
+```
 
 После запуска интерактивная документация API (Swagger UI) доступна по адресу: http://127.0.0.1:8000/docs.
